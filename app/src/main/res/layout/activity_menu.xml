@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/nguoidung"
+        android:layout_width="188dp"
+        android:layout_height="114dp"
+        android:onClick="NguoiDung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/nam" />
+
+    <ImageView
+        android:id="@+id/theloai"
+        android:layout_width="188dp"
+        android:layout_height="114dp"
+        android:onClick="TheLoai"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085"
+        app:srcCompat="@drawable/theloai" />
+
+    <ImageView
+        android:id="@+id/sach"
+        android:layout_width="188dp"
+        android:layout_height="114dp"
+        android:onClick="Sach"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439"
+        app:srcCompat="@drawable/sach" />
+
+    <ImageView
+        android:id="@+id/hoadon"
+        android:layout_width="188dp"
+        android:layout_height="114dp"
+        android:onClick="HoaDon"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439"
+        app:srcCompat="@drawable/hoadon" />
+
+    <ImageView
+        android:id="@+id/banchay"
+        android:layout_width="188dp"
+        android:layout_height="114dp"
+        android:onClick="BanChay"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/banchay" />
+
+    <ImageView
+        android:id="@+id/thongke"
+        android:layout_width="188dp"
+        android:layout_height="114dp"
+        android:onClick="ThongKe"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/thongke" />
+
+    <TextView
+        android:id="@+id/NguoiDung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguoi Dung"
+        app:layout_constraintBottom_toTopOf="@+id/sach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nguoidung"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <TextView
+        android:id="@+id/TheLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Loai"
+        app:layout_constraintBottom_toTopOf="@+id/sach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nguoidung"
+        app:layout_constraintVertical_bias="0.423" />
+
+    <TextView
+        android:id="@+id/Sach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="39dp"
+        android:text="Sach"
+        app:layout_constraintBottom_toTopOf="@+id/banchay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sach" />
+
+    <TextView
+        android:id="@+id/HoaDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Hoa Don"
+        app:layout_constraintBottom_toTopOf="@+id/thongke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hoadon"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/BanChay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ban Chay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banchay"
+        app:layout_constraintVertical_bias="0.423" />
+
+    <TextView
+        android:id="@+id/ThongKe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:text="ThongKe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/BanChay"
+        app:layout_constraintTop_toBottomOf="@+id/thongke"
+        app:layout_constraintVertical_bias="0.423" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
